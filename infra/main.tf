@@ -24,12 +24,10 @@ resource "aws_instance" "app_server" {
 }
 
 resource "aws_key_pair" "chaveSSH" {
-<<<<<<< HEAD:infra/main.tf
   key_name = var.chave
   public_key = file("${var.chave}.pub")
-=======
-  key_name = DEV
-  public_key = file("Iac-Dev.pub")
-  
->>>>>>> dc9b94598960ac904068802091ecf07a9036a2ed:main.tf
+}
+
+output "IP_publico" {
+  value = aws_instance.app_server.public_ip
 }

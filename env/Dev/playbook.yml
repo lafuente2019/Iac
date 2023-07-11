@@ -13,9 +13,13 @@
       name:
         - Django
         - Djangorestframework
+  - name: Verificar se o projeto já existe
+    stat:
+      path: /home/ubuntu/dependencias/setup/settings.py
+    register: projeto  
   - name: Iniciando projeto
     shell: '. /home/ubuntu/dependencias/venv/bin/activate;django-admin startproject setup /home/ubuntu/dependencias/'
-    ignore_errors: yes
+    when: not projeto.stat.exists
   - name: Alterando o hosts do arquivo settings
     lineinfile:
       path: /home/ubuntu/dependencias/setup/settings.py
