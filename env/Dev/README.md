@@ -47,7 +47,7 @@ Este exemplo cria uma instância AWS usando o tipo de instância especificado (t
 Este módulo requer a existência de um módulo de infraestrutura separado localizado em ../../infra para fornecer os recursos de infraestrutura necessários.
 
 
-## Configuração Terraform-Ansible
+# Configuração Terraform-Ansible
 Este repositório contém um playbook do Ansible para configurar um ambiente usando Terraform e Ansible. O playbook realiza uma série de tarefas, incluindo a instalação do Python 3 e do Virtualenv, a instalação de dependências usando o PIP, a verificação da existência de um projeto, a inicialização de um projeto Django e a modificação do arquivo de configuração hosts.
 
 ## Tarefas
