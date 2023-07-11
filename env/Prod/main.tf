@@ -9,6 +9,7 @@ module "aws-prod" {
   nomeGrupo = "Prod"
 }
 
-output "IP" {
-  value = module.aws-prod.IP_publico
-}
+# o output é utilizado quando trabalhamos com instancia, ele nos traz o IP publico da maquina
+#output "IP" {
+#  value = module.aws-prod.IP_publico
+#}
