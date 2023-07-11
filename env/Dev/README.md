@@ -47,10 +47,10 @@ Este exemplo cria uma instância AWS usando o tipo de instância especificado (t
 Este módulo requer a existência de um módulo de infraestrutura separado localizado em ../../infra para fornecer os recursos de infraestrutura necessários.
 
 
-## Configuração Terraform-Ansible
+# Configuração Terraform-Ansible
 Este repositório contém um playbook do Ansible para configurar um ambiente usando Terraform e Ansible. O playbook realiza uma série de tarefas, incluindo a instalação do Python 3 e do Virtualenv, a instalação de dependências usando o PIP, a verificação da existência de um projeto, a inicialização de um projeto Django e a modificação do arquivo de configuração hosts.
 
-# Tarefas
+## Tarefas
 O playbook realiza as seguintes tarefas:
 
 Instala o Python 3 e o Virtualenv usando o módulo apt do Ansible.
@@ -59,7 +59,7 @@ Verifica se o projeto já existe no caminho /home/ubuntu/dependencias/setup/sett
 Inicializa o projeto Django usando o comando django-admin startproject com o módulo shell do Ansible. Essa tarefa só é executada se o projeto não existir.
 Altera o arquivo de configuração settings.py para permitir todas as hosts usando o módulo lineinfile do Ansible.
 
-# Uso
+## Uso
 Certifique-se de ter as chaves SSH configuradas corretamente para acessar o servidor de destino.
 Clone este repositório:
 
@@ -70,5 +70,5 @@ Ajuste o arquivo hosts para fornecer o endereço IP ou o nome de host do servido
 Execute o seguinte comando para iniciar a execução do playbook:
 ansible-playbook -i hosts playbook.yml 
 
-# Configuração Adicional
+## Configuração Adicional
 Certifique-se de ajustar o arquivo hosts para fornecer o endereço IP ou o nome de host do servidor de destino. Além disso, verifique se o caminho do arquivo de configuração settings.py está correto no arquivo playbook.yml.
