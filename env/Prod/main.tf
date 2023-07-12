@@ -7,6 +7,7 @@ module "aws-prod" {
   minimo = 1
   maximo = 10
   nomeGrupo = "Prod"
+  producao = true
 }
 
 # o output é utilizado quando trabalhamos com instancia, ele nos traz o IP publico da maquina
