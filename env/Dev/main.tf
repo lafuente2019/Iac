@@ -7,6 +7,7 @@ module "aws-dev" {
   minimo = 0
   maximo = 1
   nomeGrupo = "Dev"
+  producao = false
 }
 
 # o output é utilizado quando trabalhamos com instancia, ele nos traz o IP publico da maquina
