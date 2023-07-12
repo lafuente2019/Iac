@@ -8,3 +8,8 @@
 
 # Chave de acesso
 *.pem
+
+#Chave publica
+*.pub
+Iac-Dev
+Iac-Prod
