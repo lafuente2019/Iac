@@ -1,0 +1,15 @@
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Chave de acesso
+*.pem
+
+#Chave publica
+*.pub
+Iac-Dev
+Iac-Prod
